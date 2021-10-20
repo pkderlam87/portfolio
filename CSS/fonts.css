@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("/Fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Open_Sans', sans-serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .banner_mobile_tablet{
+        width: 100%;
+    }
+    .banner_desktop{
+        display: none;
+    }
+}
+@media (min-width: 769px) {
+    .banner_mobile_tablet{
+        display: none;
+    }
+    .banner_desktop{
+        width: 100%;
+    }
+    
+}
