@@ -18,3 +18,8 @@ h6{
 p{
     font-family: 'Raleway', sans-serif;
 }
+@media (min-width: 769px) {
+    a:hover{
+        font-weight: 600;
+    }
+}
