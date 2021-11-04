@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/styles.css" rel="stylesheet">
-    <link href="CSS/index.css" rel="stylesheet">
-    <link href="CSS/fonts.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/variables.css" rel="stylesheet">
     <link rel="shortcut icon" href="/Images/favicon.ico">
     <script src="https://kit.fontawesome.com/1dd9a9266b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
     <title>
         Priscila's Portfolio
     </title>
@@ -25,8 +28,16 @@
             class="banner_desktop" />
     </div>
     <nav>
+        <div class="nav_mobile_tablet">
+            <i class="fas fa-bars"></i>
+            <a href="https://github.com/pkderlam87/"><i class="fab fa-github"></i></a>
+            <a href="/Resume - Priscila Kuhn Derlam - Front-end Developer.pdf" download class="resume">
+                <h6>Resume <i class="far fa-file"></i></h6>
+            </a>
+            <a href="https://www.instagram.com/prikuhnderlam/"><i class="fab fa-instagram"></i></a>
+        </div>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
             <li><a href="moreAboutMe.html">More about me</a></li>
             <li><a href="contact.html">Contact me</a></li>
             </a>
@@ -38,7 +49,9 @@
     <footer>
         <div>
             <h3>Priscila Kuhn Derlam</h3>
-            <h6>7031, Trondheim / Norway</h6>
+            <h6>
+                7031, Trondheim / Norway
+            </h6>
             <h6>
                 <a href="mailto: pkderlam@hotmail.com">
                     <email>pkderlam@hotmail.com</email>
@@ -59,6 +72,7 @@
             </div>
         </div>
     </footer>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

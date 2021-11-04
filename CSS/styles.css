@@ -1,22 +1,43 @@
+html{
+    height: 100vh;
+}
 html,
 body{
     height: 100%;
 }
 /*--------nav*/
-ul{
+.nav_mobile_tablet{
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+}
+.nav_mobile_tablet,
+ul{
+    border-top: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+ul{
+    position: relative;
+    display: none;
     padding: 0 1%;
     max-width: 100%;
     justify-content: center;
-    border-top: 2px solid #00803754;
-    border-bottom: 2px solid #00803754;
+    animation: appear 2s;
+}
+@keyframes appear{
+    0% {left: -30%;}
+    100%{left: 0;}
 }
 li{
     text-decoration: underline;
     list-style: none;
     padding: 1% 3%;
-    border-right: 1px solid #707070;
     margin: 1% 0 1% 0;
+}
+.current,
+.current  a{
+    color: var(--secondary-color) ;
 }
 /*--------links*/
 a{
@@ -27,7 +48,7 @@ a{
 main{
     display: flex;
     flex: 1 0 auto;
-    height: 55%;
+    height: 50%;
 }
 h1{
     text-align: center;
@@ -39,12 +60,12 @@ h1{
 }
 @keyframes rotate{
     0%{ rotate: 15deg;}
-    50%{ color: #00803754; rotate: 25deg;}
-    100%{ color: #008037; rotate: 50deg;}
+    50%{ color:var(--primary-color); rotate: 25deg;}
+    100%{ color: var(--secondary-color); rotate: 50deg;}
 }
 /*---------footer*/
 footer{
-    background-color: #00803754;
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -71,18 +92,30 @@ h6{
 }
 /*---------desktop version*/
 @media (min-width: 769px) {
-    .banner_mobile_tablet{
+    .banner_mobile_tablet,
+    .fa-bars{
         display: none;
     }
     .banner_desktop{
         width: 100%;
     }
+    .nav_mobile_tablet{
+        justify-content: space-around;
+    }
+    ul{
+        display: flex;
+        animation: none;
+    }
     li{
+        border-right: 1px solid #707070;
         padding: 1% 5%;
         text-decoration: none;
     }
     a:hover{
         text-decoration: underline;
+    }
+    main{
+        height: 35%;
     }
     .fab,
     .far{
