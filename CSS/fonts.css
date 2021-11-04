@@ -18,8 +18,21 @@ h6{
 p{
     font-family: 'Raleway', sans-serif;
 }
+@media(max-width: 768px){
+    .fab,
+    .far{
+        font-size: 1.3em;
+    }
+}
 @media (min-width: 769px) {
     a:hover{
         font-weight: 600;
+    }
+    .fab,
+    .far{
+        font-size: 1.6em;
+    }
+    .resume{
+        font-size: 1.2em;
     }
 }

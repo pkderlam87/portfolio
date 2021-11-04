@@ -1,3 +1,8 @@
+html,
+body{
+    height: 100%;
+}
+/*--------nav*/
 ul{
     display: flex;
     padding: 0 1%;
@@ -13,10 +18,49 @@ li{
     border-right: 1px solid #707070;
     margin: 1% 0 1% 0;
 }
+/*--------links*/
 a{
     text-decoration: none;
     color: #000;
 }
+/*--------main*/
+main{
+    display: flex;
+    flex: 1 0 auto;
+    height: 55%;
+}
+h1{
+    text-align: center;
+    margin: 3% auto;
+}
+.fa-code-branch{
+    position: relative;
+    animation: rotate 3s infinite;
+}
+@keyframes rotate{
+    0%{ rotate: 15deg;}
+    50%{ color: #00803754; rotate: 25deg;}
+    100%{ color: #008037; rotate: 50deg;}
+}
+/*---------footer*/
+footer{
+    background-color: #00803754;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.resume{
+    text-decoration: underline;
+}
+h3,
+h6{
+    margin: 5% 0;
+}
+/*---------mobile version*/
 @media (max-width: 768px) {
     .banner_mobile_tablet{
         width: 100%;
@@ -25,6 +69,7 @@ a{
         display: none;
     }
 }
+/*---------desktop version*/
 @media (min-width: 769px) {
     .banner_mobile_tablet{
         display: none;
@@ -38,5 +83,22 @@ a{
     }
     a:hover{
         text-decoration: underline;
+    }
+    .fab,
+    .far{
+        cursor: pointer;
+    }
+    .fab:hover,
+    .far:hover{
+        transform: translateY(2px);
+    }
+    footer{
+        flex-direction: row;
+    }
+    .wrapper{
+        width: 70%;
+    }
+    .wrapper:nth-child(n){
+        margin: 3% 0;
     }
 }
