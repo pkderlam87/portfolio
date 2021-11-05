@@ -10,10 +10,14 @@ h6{
 body{
     font-family: 'Raleway', sans-serif;
 }
+.fa-code-branch{
+    font-size: 1em;
+}
 @media(max-width: 768px){
     .fab,
-    .far{
-        font-size: 1.5em;
+    .far,
+    .fas{
+        font-size: 2em;
     }
 }
 @media (min-width: 769px) {
@@ -21,10 +25,17 @@ body{
         font-weight: 600;
     }
     .fab,
-    .far{
+    .far,
+    .fas{
         font-size: 2.3em;
     }
     .resume{
         font-size: 1.2em;
+    }
+    li{
+        font-weight: 700;
+    }
+    li:hover{
+        font-size: 1.1em;
     }
 }
