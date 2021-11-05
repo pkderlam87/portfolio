@@ -22,7 +22,7 @@ h5{
     margin: 0;
 }
 ul{
-    position: relative;
+    position: absolute;
     display: none;
     padding: 0 1%;
     max-width: 40%;
@@ -30,6 +30,8 @@ ul{
     border: 2px solid var(--primary-color);
     box-shadow: 6px 3px 2px var(--shadow);
     margin-top: 0;
+    z-index: 100;
+    background: white;
     animation: appear 2s;
 }
 @keyframes appear{
