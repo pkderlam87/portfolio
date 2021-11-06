@@ -25,7 +25,7 @@ ul{
     position: absolute;
     display: none;
     padding: 0 1%;
-    max-width: 40%;
+    max-width: 50%;
     justify-content: center;
     border: 2px solid var(--primary-color);
     box-shadow: 6px 3px 2px var(--shadow);
@@ -121,9 +121,10 @@ h3{
     }
     ul{
         display: flex;
+        position: relative;
+        max-width: 100%;
         animation: none;
         background-color: var(--ice);
-        max-width: 100%;
     }
     li{
         margin: 1% 0.05%;
