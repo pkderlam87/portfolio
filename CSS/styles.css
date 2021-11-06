@@ -1,5 +1,6 @@
 @import url("/css/variables.css");
 @import url("/css/fonts.css");
+@import url("/css/contact.css");
 html{
     height: 100vh;
 }
