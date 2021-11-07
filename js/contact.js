@@ -1,6 +1,5 @@
 const fileField = document.querySelector(`input[type="file"]`);
 const form = document.querySelector("form");
-const nameError = document.querySelector("#yourNameError");
 const emailError = document.querySelector("#emailError");
 const validationMessage = document.querySelector("#validation");
 const errorRequest = document.querySelector(".errorRequest");
@@ -19,10 +18,9 @@ const formSubmission = (event) => {
         .then((response) => {
             console.log(response);
             if (response.status == "mail_sent") {
+                emailError.style.display = "none";
                 validationMessage.style.display = "block";
                 validationMessage.innerHTML = `<div class= "successMessage"><p>${response.message}</p></div>`;
-                nameError.style.display = "none";
-                emailError.style.display = "none";
                 form.reset();
                 setTimeout(function () {
                     validationMessage.style.display = "none";

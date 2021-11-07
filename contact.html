@@ -48,14 +48,13 @@
             <div>
                 <label for="yourname">
                     Your name*</label>
-                <div class="form-error" id="yourNameError">Your name should be more than 5 characters long</div>
-                <input name="yourname" id="yourname" placeholder="Name required" type="text" />
+                <input name="yourname" id="yourname" placeholder="Name required" type="text" minlength="5" required />
             </div>
             <div>
                 <label for="email">
                     Email*</label>
+                <input name="email" id="email" placeholder="Email required" type="email" required />
                 <div class="form-error" id="emailError">Your email must be a valid email address</div>
-                <input name="email" id="email" placeholder="Email required" type="email" />
             </div>
             <div>
                 <label for="subject">

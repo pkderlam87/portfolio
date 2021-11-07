@@ -8,24 +8,30 @@ form{
  }
  input,
  textarea{
+     border-radius: 5px;
+     border: 1px solid var(--primary-color);
+     box-shadow: 6px 3px 2px var(--shadow);
      display:block;
+     padding: 2%;
      margin: 20px auto;
  }
  .form-error {
      display: none;
      max-width: 80%;
-     font-weight: 800;
-     background-color: rgb(228, 194, 194);
-     border: 2px solid rgb(219, 91, 91);
+     font-weight: 700;
+     background-color: var(--beige-color);
+     border: 2px solid var(--rose-color);
      margin: 5px auto 0 auto;
  }
  .contactSend{
+     border: 2px solid var(--primary-color);
+     background-color: var(--ice);
      margin-top: 2%;
      padding: 10px 30px;
  }
  #validation{
-     border: 2px solid #cfe67f;
-     background-color: rgba(166, 255, 0, 0.2);
+     border: 2px solid var(--primary-color);
+     background-color: var(--light-ice);
  }
  #validation, 
  .errorRequest{
@@ -34,8 +40,8 @@ form{
      z-index: 101;
  }
  .errorRequest{
-     border: 2px solid rgb(219, 91, 91);
-     background-color: rgba(248, 87, 87, 0.2);
+     border: 2px solid var(--beige-color);
+     background-color: var(--rose-color);
  }
 @media (min-width:769px){
  form{
@@ -50,6 +56,11 @@ form{
  .contactSend{
      max-width: 80%;
      margin: 0 auto;
+     cursor: pointer;
+ }
+ .contactSend:hover{
+    font-weight: 800;
+    transform: translateY(1px);
  }
  .contactSend, 
  form h6,
