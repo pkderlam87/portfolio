@@ -57,9 +57,6 @@ footer h3,
 footer h6{
     margin: 0.5% auto;
 }
-.resume{
-    text-decoration: underline;
-}
 /*---------mobile version*/
 @media (max-width: 768px) {
     .banner_mobile_tablet{
