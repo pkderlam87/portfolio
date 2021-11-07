@@ -16,7 +16,8 @@
     background-color: white;
 }
 .card > .fa-github,
-.card > .fa-instagram{
+.card > .fa-instagram,
+.card .fa-file{
     width: 217px;
 }
 /*---------desktop version*/
@@ -28,7 +29,6 @@
         justify-content: space-evenly;
     }
     .card{
-        flex-direction: row;
         justify-content: center;
         margin: 3%;
         padding: 4%;
@@ -36,5 +36,11 @@
     .card:hover{
         cursor: pointer;
         transform: translateY(2px);
+    }
+    .resume:hover{
+        text-decoration: none;
+    }
+    .title_card:hover{
+        text-decoration: underline;
     }
 }
