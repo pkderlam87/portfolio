@@ -3,6 +3,7 @@
 @import url("/css/contact.css");
 @import url("/css/card.css");
 @import url("/css/nav.css");
+@import url("/css/moreAboutMe.css");
 html,
 body{
     height:100vh;

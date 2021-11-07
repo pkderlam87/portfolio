@@ -19,6 +19,9 @@
 .card > .fa-instagram{
     width: 217px;
 }
+.title_card{
+    margin: 1% auto;
+}
 /*---------desktop version*/
 @media (min-width: 769px) {
     .wrapper_cards{
