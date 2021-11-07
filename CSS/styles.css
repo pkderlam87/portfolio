@@ -1,6 +1,7 @@
 @import url("/css/variables.css");
 @import url("/css/fonts.css");
 @import url("/css/card.css");
+@import url("/css/nav.css");
 html,
 body{
     height:100vh;
@@ -10,47 +11,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-/*--------nav*/
-.nav_mobile_tablet{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 1% 0;
-}
-.nav_mobile_tablet{
-    border-top: 1px solid var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-}
-h5{
-    margin: 0;
-}
-ul{
-    position: absolute;
-    display: none;
-    padding: 0 2%;
-    width: 40%;
-    justify-content: center;
-    border: 2px solid var(--primary-color);
-    box-shadow: 6px 3px 2px var(--shadow);
-    margin-top: 0;
-    z-index: 100;
-    background: white;
-    animation: appear 1s;
-}
-@keyframes appear{
-    0% {left: -25%;}
-    100%{left: 0;}
-}
-li{
-    text-decoration: underline;
-    list-style: none;
-    padding: 1% 4%;
-    margin: 10% 0;
-}
-.current,
-.current  a{
-    color: var(--secondary-color) ;
-}
+
 
 /*--------links*/
 a{
@@ -108,34 +69,11 @@ h6{
 }
 /*---------desktop version*/
 @media (min-width: 769px) {
-    .banner_mobile_tablet,
-    .fa-bars{
+    .banner_mobile_tablet{
         display: none;
     }
     .banner_desktop{
         width: 100%;
-    }
-    .nav_mobile_tablet{
-        justify-content: space-around;
-    }
-    ul{
-        display: flex;
-        position: relative;
-        width: 100%;
-        animation: none;
-        background-color: var(--ice);
-    }
-    li{
-        margin: 1% 0.05%;
-        border-radius: 15px 15px 0 0;
-        border-top: 1px solid var(--primary-color);
-        border-right: 1px solid var(--primary-color);
-        background-color: white;
-        padding: 1% 5%;
-        text-decoration: none;
-    }
-    .current{
-        background-color: var(--light-ice);
     }
     a:hover{
         text-decoration: underline;
