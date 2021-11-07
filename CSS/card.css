@@ -1,0 +1,40 @@
+.wrapper_cards{
+    max-width: 90%;
+    margin: 5% auto;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--primary-color);
+    align-items: center;
+    border-radius: 15px;
+    padding: 2%;
+    font-size: 3.5em;
+    margin: 5% auto;
+    box-shadow: 6px 3px 2px var(--shadow);
+    text-align: center;
+    background-color: white;
+}
+.card > .fa-github,
+.card > .fa-instagram{
+    width: 217px;
+}
+/*---------desktop version*/
+@media (min-width: 769px) {
+    .wrapper_cards{
+        display: flex;
+        max-width: 100%;
+        margin: 3% auto;
+        justify-content: space-evenly;
+    }
+    .card{
+        flex-direction: row;
+        justify-content: center;
+        margin: 3%;
+        padding: 4%;
+    }
+    .card:hover{
+        cursor: pointer;
+        transform: translateY(2px);
+    }
+}
