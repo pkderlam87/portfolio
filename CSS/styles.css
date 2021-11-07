@@ -53,9 +53,9 @@ footer{
     align-items: center;
     flex-shrink: 0;
 }
-h3,
-h6{
-    margin: 1% auto;
+footer h3,
+footer h6{
+    margin: 0.5% auto;
 }
 .resume{
     text-decoration: underline;
