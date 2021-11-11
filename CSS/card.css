@@ -17,7 +17,8 @@
 }
 .card > .fa-github,
 .card > .fa-instagram,
-.card .fa-file{
+.card .fa-file,
+.card > .fa-linkedin{
     width: 217px;
 }
 .title_card{
