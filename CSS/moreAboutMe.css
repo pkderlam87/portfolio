@@ -1,6 +1,18 @@
 .hobbies{
     max-width: 100%;
+    box-shadow: 6px 3px 2px var(--shadow);
 }
 figure{
     margin: 2% auto;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    max-width: 65%;
+    margin: 0 auto;
+}
+.hobbies-text{
+    max-width: 50%;
+    margin: 0 auto;
 }
