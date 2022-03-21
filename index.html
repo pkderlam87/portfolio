@@ -1,81 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Priscila's Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Priscila's portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/site.webmanifest">
-    <script src="https://kit.fontawesome.com/1dd9a9266b.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
-    <title>
-        Priscila's Portfolio
-    </title>
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+        crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <div>
-        <a href="index.html"><img src="/Images/banner.jpg"
-                alt="A banner with a headline: Priscila Kuhn Derlam, subheadline: Junior Front-end Developer, and her photo"
-                class="banner_mobile_tablet" /></a>
-        <a href="index.html"><img src="/Images/banner_desktop.jpg"
-                alt="A banner with a headline: Priscila Kuhn Derlam, subheadline: Junior Front-end Developer, and her photo"
-                class="banner_desktop" /></a>
-    </div>
-    <nav>
-        <div class="nav_mobile_tablet">
-            <i class="fas fa-bars"></i>
-        </div>
-        <ul>
-            <a href="index.html" class="menu-item">
-                <li class="current">Home</li>
-            </a>
-            <a href="moreAboutMe.html" class="menu-item">
-                <li>More about me</li>
-            </a>
-            <a href="contact.html" class="menu-item">
-                <li>Contact me</li>
-            </a>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html"><img
+                        src="/images/Logos/Logo Pee - font white - whithout background - without name.png"
+                        alt="Priscila's Logo" class="mobile__logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
     <main>
-        <div class="wrapper_cards">
-            <div class="card github">
-                <h6 class="title_card">Github</h6> <i class="fab fa-github"></i>
-            </div>
-            <div class="card resume"><a href="/Resume - Priscila Kuhn Derlam - Front-end Developer.pdf" download
-                    class="resume">
-                    <h6 class="title_card">Resume</h6> <i class="far fa-file"></i>
-                </a>
-            </div>
-            <div class="card instagram">
-                <h6 class="title_card">Instagram</h6> <i class="fab fa-instagram"></i>
-            </div>
-            <div class="card linkedin">
-                <h6 class="title_card">Linkedin</h6> <i class="fab fa-linkedin"></i>
-            </div>
-        </div>
+
     </main>
     <footer>
-        <h3>Priscila Kuhn Derlam</h3>
-        <h6>
-            7031, Trondheim / Norway
-        </h6>
-        <h6>
-            <a href="mailto: pkderlam@hotmail.com">
-                <email>pkderlam@hotmail.com</email>
-            </a>
-        </h6>
+
     </footer>
-    <script src="/js/script.js"></script>
-    <script src="/js/socialMedia.js" type="module"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
