@@ -60,20 +60,38 @@
         </nav>
     </header>
     <main>
-        <div class="introduction container">
-            <h6 class="introduction__text">Hi, I'm Priscila Kuhn Derlam,
-                Junior Front End Developer based in Trondheim, Norway.</h6>
-            <img src="/images/My cartoon photo.jpeg" alt="Priscila's cartoon photo" class="introduction__photo">
-            <a href="/images/myw3schoolsimage.jpg" download>
-                <button class="btn"><i class="fa-solid fa-download"></i> Resume</button>
-            </a>
+        <div class="wrapper">
+            <div class="introduction container">
+                <h6 class="introduction__text">Hi, I'm Priscila Kuhn Derlam,
+                    Junior Front End Developer based in Trondheim, Norway.</h6>
+                <img src="/images/My cartoon photo.jpeg" alt="Priscila's cartoon photo" class="introduction__photo">
+                <div class="introduction__buttons">
+                    <div>
+                        <a href="/images/myw3schoolsimage.jpg" download>
+                            <button class="btn"><i class="fa-solid fa-download"></i> Resume</button>
+                        </a>
+                    </div>
+                    <div>
+                        <button class="btn linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="container">
+        <a href="/index.html" class="flex"><img
+                src="/images/Logos/Logo Pee - font white - whithout background - without name.png" alt="Priscila's Logo"
+                class="mobile__logo--footer"></a>
+        <div class="icons__footer">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>Copyright &copy 2022, Priscila Kuhn Derlam</p>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="/js/socialMedia.js" type="module"></script>
 </body>
 
 </html>

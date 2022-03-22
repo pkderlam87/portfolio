@@ -1,7 +1,16 @@
+.introduction{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 .introduction__text{
     font-family: 'IBM Plex Mono';
 }
 .introduction__photo{
     width: 60%;
     margin: 2% auto;
+}
+.introduction__buttons{
+    display: flex;
+    justify-content: space-around;
 }
