@@ -18,25 +18,20 @@
     .navbar-toggler{
         color: transparent;
         border: none;
-        &:focus{
-            outline: transparent;
-        }
     }
     .navbar-nav{
         .nav-link.active{
             color: getColour(primary-color);
+            text-decoration: underline;
         }
         .nav-link{
-            color: darken(getColour(primary-color), 20%);
+            color: darken(getColour(primary-color), 5%);
         &:hover{
             color: getColour(primary-color);
             font-size: 1.2rem;
         }
         }
     }
-}
-button:focus:not(:focus-visible){
-    outline: transparent;
 }
 .nav-link{
     font-family: $font-secondary;

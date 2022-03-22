@@ -35,25 +35,18 @@
   border: none;
 }
 
-.navbar-light .navbar-toggler:focus {
-  outline: transparent;
-}
-
 .navbar-light .navbar-nav .nav-link.active {
   color: #FFF;
+  text-decoration: underline;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #cccccc;
+  color: #f2f2f2;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #FFF;
   font-size: 1.2rem;
-}
-
-button:focus:not(:focus-visible) {
-  outline: transparent;
 }
 
 .nav-link {
@@ -62,5 +55,39 @@ button:focus:not(:focus-visible) {
 
 .navbar-collapse {
   margin: 0 3%;
+}
+
+.btn, .btn__navbar {
+  border: 5px solid #035757;
+  color: black;
+  font-family: "Gotham-rounded", sans-serif;
+}
+
+.btn:hover, .btn__navbar:hover {
+  background-color: #035757;
+  color: #FFF;
+}
+
+.btn__navbar {
+  border: 3px solid #FFF;
+  color: #FFF;
+}
+
+.btn__navbar:hover {
+  background-color: #FFF;
+  color: #035757;
+}
+
+.fa-solid:hover {
+  font-size: 1.1rem;
+}
+
+.introduction__text {
+  font-family: 'IBM Plex Mono';
+}
+
+.introduction__photo {
+  width: 60%;
+  margin: 2% auto;
 }
 /*# sourceMappingURL=style.css.map */
