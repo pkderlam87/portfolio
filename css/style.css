@@ -61,6 +61,7 @@
   border: 5px solid #035757;
   color: black;
   font-family: "Gotham-rounded", sans-serif;
+  border-radius: 11px;
 }
 
 .btn:hover, .btn__navbar:hover {
@@ -92,6 +93,16 @@
   font-size: 2rem;
   color: #FFF;
   margin: 2% auto;
+}
+
+.fa-brands {
+  cursor: pointer;
+}
+
+.title {
+  margin: 10% auto 3% auto;
+  font-family: 'Gotham-rounded';
+  text-align: center;
 }
 
 .introduction {

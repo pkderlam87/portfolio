@@ -2,6 +2,7 @@
     border: 5px solid getColour(secondary-color);
     color: black;
     font-family: $font-secondary;
+    border-radius: 11px;
     &:hover{
        background-color: getColour(secondary-color);
        color: getColour(primary-color); 
