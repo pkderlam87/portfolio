@@ -17,3 +17,7 @@
         color: getColour(secondary-color); 
     }
 }
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}

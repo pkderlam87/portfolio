@@ -79,6 +79,14 @@
   color: #035757;
 }
 
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .fa-solid:hover {
   font-size: 1.1rem;
 }
@@ -123,14 +131,6 @@
 .introduction__photo {
   width: 60%;
   margin: 2% auto;
-}
-
-.introduction__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 * {
