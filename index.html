@@ -74,106 +74,11 @@
             </section>
             <section class="skills">
                 <h1 class="title" id="skills">Skills</h1>
-                <div class="row">
-                    <div class="col">
-                        <div>
-                            <i class="fa-brands fa-html5"></i>
-                            <h6>HTML</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-bootstrap"></i>
-                            <h6>Bootstrap</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-sass"></i>
-                            <h6>Sass</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-npm"></i>
-                            <h6>npm</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-wordpress-simple"></i>
-                            <h6>Wordpress</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-wordpress-simple"></i>
-                            <h6>Adobe XD</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-trello"></i>
-                            <h6>Trello</h6>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <h6>CSS</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-js-square"></i>
-                            <h6>JavaScript</h6>
-                        </div>
-                        <div>
-                            <i class="fas fa-react"></i>
-                            <h6>React</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-github"></i>
-                            <h6>Github</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-github"></i>
-                            <h6>Strapi</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-hotjar"></i>
-                            <h6>Hotjar</h6>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-hotjar"></i>
-                            <h6>Responsive design</h6>
-                        </div>
-                    </div>
-                </div>
+                <div class="skills__list container"></div>
             </section>
-            <section class="skills">
+            <section class="services">
                 <h1 class="title" id="services"> My Services</h1>
-                <div>
-                    <img src="/images/services/prototype.jpg" alt="Example of prototype using Adobe XD">
-                    <div>
-                        <i class="fa-solid fa-pen-ruler"></i>
-                        <h1>Prototype</h1>
-                    </div>
-                    <div>
-                        <p>By anticipating the look-and-feel of the desired result, one can offer early
-                            opportunities for improvements and, thus, spare countless amounts of time and money.
-                            A valuable resource for planning.</p>
-                    </div>
-                </div>
-                <div>
-                    <img src="/images/services/Web_development.jpg"
-                        alt="Example of web development using VS Code and the mobile browser">
-                    <div>
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                        <h1>Web development</h1>
-                    </div>
-                    <div>
-                        <p>At this stage, we can bring a prototype to life by coding each detail thoroughly. It's where
-                            all the knowledge should clump together while the coding, by its turn, should reflect
-                            decoupling and cohesion.</p>
-                    </div>
-                    <div>
-                        <img src="/images/services/freestocks-40k6ZqbsXuo-unsplash.jpg" alt="Example of usability test">
-                        <div>
-                            <i class="fa-solid fa-user-check"></i>
-                            <h1>Usability test</h1>
-                        </div>
-                        <div>
-                            <p>A good website is useful, intuitive, and non-misleading in any sense. After the features
-                                are exposed during the prototyping, it's essential to validate the final result with
-                                some rounds of monitored user interactions.</p>
-                        </div>
+                <div class="services__show container"></div>
             </section>
             <section class="about">
                 <h1 class="title" id="about">About</h1>
@@ -209,11 +114,14 @@
                         <h6>pkderlam@hotmail.com</h6>
                     </a>
                 </div>
+                <div id="validation"></div>
+                <div class="errorRequest"></div>
                 <form action="https://pkderlam.one/portfolio/wp-json/contact-form-7/v1/contact-forms/13/feedback"
-                    method="post">
+                    method="post" class="contact__form">
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Full Name*</label>
-                        <input type="name" class="form-control" id="exampleInputName" required>
+                        <input type="text" class="form-control" id="exampleInputName" required minlength="2">
+                        <div class="form-error" id="nameError">Your name should have at least 2 characters</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email*</label>
@@ -227,7 +135,9 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputMessage" class="form-label">Enter your message*</label>
-                        <textarea type="text" class="form-control" id="exampleInputMessage" required></textarea>
+                        <textarea type="text" class="form-control" id="exampleInputMessage" required
+                            minlength="5"></textarea>
+                        <div class="form-error" id="messageError">Your message should have at least 5 characters</div>
                     </div>
                     <button type="submit" class="btn">Submit</button>
                 </form>

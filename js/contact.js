@@ -1,6 +1,7 @@
-const fileField = document.querySelector(`input[type="file"]`);
-const form = document.querySelector("form");
+const form = document.querySelector(".contact__form");
 const emailError = document.querySelector("#emailError");
+const nameError = document.querySelector("#nameError");
+const messageError = document.querySelector("#messageError");
 const validationMessage = document.querySelector("#validation");
 const errorRequest = document.querySelector(".errorRequest");
 
@@ -29,11 +30,14 @@ const formSubmission = (event) => {
             if (response.status == "validation_failed") {
                 for (let i = 0; i < (response.invalid_fields).length; i++) {
                     switch (response.invalid_fields[i].error_id) {
-                        case "-ve-yourname":
+                        case "-ve-exampleInputName":
                             nameError.style.display = "block";
                             break;
-                        case "-ve-email":
+                        case "-ve-exampleInputEmail1":
                             emailError.style.display = "block";
+                            break;
+                        case "-ve-exampleInputMessage":
+                            messageError.style.display = "block";
                             break;
                     }
                 }

@@ -87,6 +87,12 @@
       justify-content: space-around;
 }
 
+#linkToPage,
+#linkToGit {
+  font-size: 2rem;
+  padding: 2% 6%;
+}
+
 .fa-solid:hover {
   font-size: 1.1rem;
 }
@@ -183,5 +189,32 @@ footer p {
 footer .mobile__logo--footer {
   width: 40%;
   margin: 2% auto;
+}
+
+.image__carousel-inner {
+  width: 70%;
+  margin: 0 auto 40% auto;
+}
+
+@media (min-width: 400px) {
+  .image__carousel-inner {
+    margin: 0 auto 20% auto;
+  }
+}
+
+@media (min-width: 500px) {
+  .image__carousel-inner {
+    margin: 0 auto 15% auto;
+  }
+}
+
+@media (min-width: 767px) {
+  .image__carousel-inner {
+    margin: 0 auto 3% auto;
+  }
+}
+
+.img__services {
+  max-width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

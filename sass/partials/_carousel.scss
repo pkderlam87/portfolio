@@ -1,0 +1,13 @@
+    .image__carousel-inner{
+        width: 70%;
+        margin: 0 auto 40% auto;
+        @media (min-width: 400px) {
+            margin: 0 auto 20% auto;
+        }
+        @media (min-width: 500px) {
+            margin: 0 auto 15% auto;
+        }
+        @media (min-width: 767px) {
+            margin: 0 auto 3% auto;
+        }
+    }
