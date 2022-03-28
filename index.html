@@ -82,78 +82,27 @@
             </section>
             <section class="about">
                 <h1 class="title" id="about">About</h1>
+                <div class="about__show container"></div>
                 <!--A video about me-->
-                <div>
-                    <p>My nickname is "Pee" (π) since I was a child, just like the name of the letter Pi when pronounced
-                        in Portuguese my mother language.</p>
-                    <p>I took a Front-end Developer higher professional degree in Norway, and I'm putting my focus on
-                        website development.</p>
-                    <p>I am organized, disciplined, adaptable, and I like to learn constantly. I'm always trying new
-                        things, I am not afraid of starting over.</p>
-                </div>
-                <div>
-                    <a href="/Resume.pdf" download>
-                        <button class="btn"><i class="fa-solid fa-download"></i> Resume</button>
-                    </a>
-                </div>
-                <div>
-                    <button class="btn linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</button>
-                </div>
-                <div>
-                    <button class="btn github"><i class="fa-brands fa-github"></i> Github</button>
-                </div>
             </section>
             <section class="contact">
-                <h1 class="title" id="contanct"></h1>
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h6>Trondheim/Norway</h6>
-                </div>
-                <div>
-                    <a href="mailto:pkderlam@hotmail.com"><i class="fa-solid fa-envelope"></i>
-                        <h6>pkderlam@hotmail.com</h6>
-                    </a>
-                </div>
-                <div id="validation"></div>
-                <div class="errorRequest"></div>
-                <form action="https://pkderlam.one/portfolio/wp-json/contact-form-7/v1/contact-forms/13/feedback"
-                    method="post" class="contact__form">
-                    <div class="mb-3">
-                        <label for="exampleInputName" class="form-label">Full Name*</label>
-                        <input type="text" class="form-control" id="exampleInputName" required minlength="2">
-                        <div class="form-error" id="nameError">Your name should have at least 2 characters</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email*</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" required>
-                        <div class="form-error" id="emailError">Your email must be a valid email address</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPhoneNumber" class="form-label">Phone Number (optional)</label>
-                        <input type="text" class="form-control" id="exampleInputPhoneNumber">
-                        <div id="phoneHelp" class="form-text">+47 99999999</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputMessage" class="form-label">Enter your message*</label>
-                        <textarea type="text" class="form-control" id="exampleInputMessage" required
-                            minlength="5"></textarea>
-                        <div class="form-error" id="messageError">Your message should have at least 5 characters</div>
-                    </div>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
+                <h1 class="title" id="contact">Contact</h1>
+                <div class="contact__show container"></div>
             </section>
         </div>
     </main>
-    <footer class="container">
-        <a href="/index.html" class="flex"><img
-                src="/images/Logos/Logo Pee - font white - whithout background - without name.png" alt="Priscila's Logo"
-                class="mobile__logo--footer"></a>
-        <div class="icons__footer">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
+    <footer>
+        <div class="container">
+            <a href="/index.html" class="flex"><img
+                    src="/images/Logos/Logo Pee - font white - whithout background - without name.png"
+                    alt="Priscila's Logo" class="mobile__logo--footer"></a>
+            <div class="icons__footer">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Copyright &copy 2022, Priscila Kuhn Derlam</p>
         </div>
-        <p>Copyright &copy 2022, Priscila Kuhn Derlam</p>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js" crossorigin="anonymous"></script>

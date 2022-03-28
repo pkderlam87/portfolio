@@ -1,3 +1,16 @@
 .img__services{
     max-width: 50%;
+    margin: 2% auto;
+}
+.services__subtitles{
+    background: getColour(secondary-color);
+    color: getColour(primary-color);
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.service__card{
+    border: 1px solid getColour(dark-gray);
+    border-radius: 15px;
+    margin-bottom:2%;
 }

@@ -3,6 +3,8 @@ import { newWindowLinkedin } from "./socialMedia.js";
 import { portfolioCardsShow } from "./components/portfolioCards.js";
 import { skillsShow } from "./components/skills.js";
 import { servicesShow } from "./components/services.js";
+import { aboutShow } from "./components/about.js";
+import { contactShow } from "./components/contact.js";
 
 const introduction = document.querySelector(".introduction");
 function intro() {
@@ -27,5 +29,7 @@ function intro() {
     portfolioCardsShow();
     skillsShow();
     servicesShow();
+    aboutShow();
+    contactShow();
 }
 intro();

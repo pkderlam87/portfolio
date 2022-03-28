@@ -3,8 +3,8 @@ export function skillsShow() {
     skillsList.innerHTML = `<div class="row">
                     <div class="col">
                         <div class="d-flex">
-                            <i class="fa-brands fa-html5 me-2"></i> 
-                            <h6>HTML</h6>
+                        <i class="fa-brands fa-html5 me-2"></i> 
+                        <h6>HTML</h6>
                         </div>
                         <div class="d-flex">
                             <i class="fa-brands fa-bootstrap me-2"></i>
