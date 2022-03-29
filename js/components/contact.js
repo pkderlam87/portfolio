@@ -17,23 +17,22 @@ export function contactShow() {
                     method="post" class="contact__form">
                     <div class="mb-3">
                         <label for="exampleInputName" class="form-label">Full Name*</label>
-                        <input type="text" class="form-control" id="exampleInputName" required minlength="2">
+                        <input type="text" class="form-control" id="exampleInputName" name="exampleInputName" required>
                         <div class="form-error" id="nameError">Your name should have at least 2 characters</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email*</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" required>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" required>
                         <div class="form-error" id="emailError">Your email must be a valid email address</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPhoneNumber" class="form-label">Phone Number (optional)</label>
-                        <input type="text" class="form-control" id="exampleInputPhoneNumber">
+                        <input type="text" class="form-control" id="exampleInputPhoneNumber" name="exampleInputPhoneNumber">
                         <div id="phoneHelp" class="form-text">+47 99999999</div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputMessage" class="form-label">Enter your message*</label>
-                        <textarea type="text" class="form-control" id="exampleInputMessage" required
-                            minlength="5"></textarea>
+                        <textarea type="text" class="form-control" id="exampleInputMessage" name="exampleInputMessage" required></textarea>
                         <div class="form-error" id="messageError">Your message should have at least 5 characters</div>
                     </div>
                     <div class="d-flex flex-column">
@@ -46,10 +45,10 @@ export function contactShow() {
     const messageError = document.querySelector("#messageError");
     const validationMessage = document.querySelector("#validation");
     const errorRequest = document.querySelector(".errorRequest");
-    form.addEventListener("submit", (event) => formSubmission(event, emailError, nameError, messageError, validationMessage, errorRequest));
+    form.addEventListener("submit", (event) => formSubmission(event, emailError, nameError, messageError, validationMessage, errorRequest, form));
 }
 //This excerpt come from https://css-tricks.com/headless-form-submission-with-the-wordpress-rest-api/ 
-const formSubmission = (event, emailError, nameError, messageError, validationMessage, errorRequest) => {
+const formSubmission = (event, emailError, nameError, messageError, validationMessage, errorRequest, form) => {
     event.preventDefault();
     console.log(event.target);
     const formElement = event.target,

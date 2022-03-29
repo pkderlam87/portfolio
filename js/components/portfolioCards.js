@@ -29,7 +29,8 @@ async function portfolioCardsShow(categoriesURL) {
 
 function contentCarousel(data) {
     portfolioCards.innerHTML +=
-        `<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        `<div class="wrap__carousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -42,25 +43,22 @@ function contentCarousel(data) {
             </div>
           <div class="carousel-item" id=${idCarouselItem++}>
             </div>
-            <div class="container buttons d-flex justify-content-around">
-          </div>
         </div>
+      </div>
+      <div class="container buttons d-flex justify-content-around">
+            <a href = "${data[0].excerpt.rendered}" class="btn" id="linkToPage"><i class="fa-solid fa-globe"></i></a>
+            <a href = "${data[1].excerpt.rendered}" class="btn" id="linkToGit"><i class="fa-brands fa-github"></i></a>
+          </div>
       </div>
       </div>`;
     const carouselItem = document.querySelectorAll(".carousel-item");
-    console.log(carouselItem);
-    const buttons = document.querySelector(".buttons");
     let dataIndex = 0;
     for (let i = 0; i < carouselItem.length; i++) {
         if (carouselItem[i].id >= (idCarouselItem - 3)) {
-            console.log("i:" + i + "carouselItemId:" + carouselItem[i].id);
-
             carouselItem[i].innerHTML = `<img src="${data[dataIndex]._embedded['wp:featuredmedia'][0].source_url}" class="d-block image__carousel-inner" alt="${data[dataIndex]._embedded['wp:featuredmedia'][0].alt_text}">
             <div class="carousel-caption d-xs-block">
               ${data[dataIndex].content.rendered}
             </div>`;
-            buttons.innerHTML = `<a href = "${data[0].excerpt.rendered}" class="btn" id="linkToPage"><i class="fa-solid fa-globe"></i></a>
-            <a href = "${data[1].excerpt.rendered}" class="btn" id="linkToGit"><i class="fa-brands fa-github"></i></a>`
             dataIndex++;
         }
 

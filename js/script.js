@@ -9,7 +9,7 @@ const introduction = document.querySelector(".introduction");
 function intro() {
     introduction.innerHTML = `<h6 class="introduction__text"></h6>
 <img src="/images/My cartoon photo.jpeg" alt="Priscila's cartoon photo" class="introduction__photo">
-<div class="buttons">
+<div class="buttons d-flex justify-content-evenly">
     <div>
         <a href="/Resume.pdf" download>
             <button class="btn"><i class="fa-solid fa-download"></i> Resume</button>

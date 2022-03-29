@@ -110,10 +110,11 @@
   color: #FFF;
 }
 
-.fa-solid:hover {
-  font-size: 1.1rem;
-}
-
+/*.fa-solid{
+    &:hover{
+        font-size: 1.1rem;
+    }
+}*/
 .icons__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,7 +232,7 @@ footer .mobile__logo--footer {
   }
 }
 
-.portfolio__cards {
+.wrap__carousel {
   border: 1px solid #2A2D2D;
   border-radius: 15px;
   margin-bottom: 2%;
@@ -263,5 +264,9 @@ footer .mobile__logo--footer {
 .email__contact {
   text-decoration: none;
   color: black;
+}
+
+.form-error {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
