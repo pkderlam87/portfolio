@@ -1,4 +1,4 @@
-    .image__carousel-inner{
+.image__carousel-inner{
         width: 70%;
         margin: 0 auto 45% auto;
         @media (min-width: 400px) {
@@ -10,7 +10,10 @@
         @media (min-width: 767px) {
             margin: 0 auto 5% auto;
         }
-    }
+        @media (min-width: 992px){
+            margin: 0 auto 40% auto;
+        }
+}
 .wrap__carousel{
     border: 1px solid getColour(dark-gray);
     border-radius: 15px;

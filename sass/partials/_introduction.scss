@@ -2,10 +2,18 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    @media (min-width:768px) {
+        .introduction__text{
+            grid-column: 1;
+        }
+    }
 }
-.introduction__text{
-    font-family: 'IBM Plex Mono';
+.introduction__text h6{
+    font-family: $font-secondary;
+    max-width: 240px;
+    margin: 2% auto;
 }
+
 .introduction__photo{
     width: 60%;
     margin: 2% auto;

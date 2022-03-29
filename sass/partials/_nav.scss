@@ -3,10 +3,14 @@
 }
 .container-fluid{
     flex-wrap: initial !important;
+    flex-shrink: 100;
 }
 .navbar-brand{
     order: 1;
     text-align: end;
+    @media(min-width: 992px){
+        text-align: start;
+    }
 }
 .mobile__logo{
     width: 50%;
@@ -38,4 +42,14 @@
 }
 .navbar-collapse{
     margin: 0 3%;
+}
+#searchForm{
+    @media (min-width:992px) {
+        align-items: center;
+    }
+    .input__search{
+        @media (min-width:992px) {
+            height: 30px;    
+        }
+}   
 }

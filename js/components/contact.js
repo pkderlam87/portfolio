@@ -41,14 +41,17 @@ export function contactShow() {
                 </form>`;
     const form = document.querySelector(".contact__form");
     const emailError = document.querySelector("#emailError");
+    const inputEmail = document.querySelector("#exampleInputEmail1");
     const nameError = document.querySelector("#nameError");
+    const inputName = document.querySelector("#exampleInputName");
     const messageError = document.querySelector("#messageError");
+    const messageTextarea = document.querySelector("#exampleInputMessage");
     const validationMessage = document.querySelector("#validation");
     const errorRequest = document.querySelector(".errorRequest");
-    form.addEventListener("submit", (event) => formSubmission(event, emailError, nameError, messageError, validationMessage, errorRequest, form));
+    form.addEventListener("submit", (event) => formSubmission(event, emailError, inputEmail, nameError, inputName, messageError, messageTextarea, validationMessage, errorRequest, form));
 }
 //This excerpt come from https://css-tricks.com/headless-form-submission-with-the-wordpress-rest-api/ 
-const formSubmission = (event, emailError, nameError, messageError, validationMessage, errorRequest, form) => {
+const formSubmission = (event, emailError, inputEmail, nameError, inputName, messageError, messageTextarea, validationMessage, errorRequest, form) => {
     event.preventDefault();
     console.log(event.target);
     const formElement = event.target,
@@ -66,6 +69,12 @@ const formSubmission = (event, emailError, nameError, messageError, validationMe
                 validationMessage.style.display = "block";
                 validationMessage.innerHTML = `<div class= "successMessage"><p>${response.message}</p></div>`;
                 form.reset();
+                nameError.style.display = "none";
+                inputName.style.border = "1px solid #ced4da";
+                emailError.style.display = "none";
+                inputEmail.style.border = "1px solid #ced4da";
+                messageError.style.display = "none";
+                messageTextarea.style.border = "1px solid #ced4da";
                 setTimeout(function () {
                     validationMessage.style.display = "none";
                 }, 10000);
@@ -75,12 +84,15 @@ const formSubmission = (event, emailError, nameError, messageError, validationMe
                     switch (response.invalid_fields[i].error_id) {
                         case "-ve-exampleInputName":
                             nameError.style.display = "block";
+                            inputName.style.border = "2px solid red";
                             break;
                         case "-ve-exampleInputEmail1":
                             emailError.style.display = "block";
+                            inputEmail.style.border = "2px solid red";
                             break;
                         case "-ve-exampleInputMessage":
                             messageError.style.display = "block";
+                            messageTextarea.style.border = "2px solid red";
                             break;
                     }
                 }

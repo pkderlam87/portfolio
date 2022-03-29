@@ -17,6 +17,10 @@
         background-color: getColour(primary-color);
         color: getColour(secondary-color); 
     }
+    @media (min-width:992px) {
+        padding:1% 2% !important;
+        margin-bottom: 0 !important;
+    }
 }
 #linkToPage,
 #linkToGit{

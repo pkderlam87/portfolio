@@ -13,6 +13,8 @@
 .container-fluid {
   -ms-flex-wrap: initial !important;
       flex-wrap: initial !important;
+  -ms-flex-negative: 100;
+      flex-shrink: 100;
 }
 
 .navbar-brand {
@@ -20,6 +22,12 @@
       -ms-flex-order: 1;
           order: 1;
   text-align: end;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    text-align: start;
+  }
 }
 
 .mobile__logo {
@@ -57,6 +65,20 @@
   margin: 0 3%;
 }
 
+@media (min-width: 992px) {
+  #searchForm {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #searchForm .input__search {
+    height: 30px;
+  }
+}
+
 .btn, .btn__navbar {
   border: 5px solid #035757;
   color: black;
@@ -78,6 +100,13 @@
 .btn__navbar:hover {
   background-color: #FFF;
   color: #035757;
+}
+
+@media (min-width: 992px) {
+  .btn__navbar {
+    padding: 1% 2% !important;
+    margin-bottom: 0 !important;
+  }
 }
 
 #linkToPage,
@@ -148,8 +177,17 @@
           justify-content: center;
 }
 
-.introduction__text {
-  font-family: 'IBM Plex Mono';
+@media (min-width: 768px) {
+  .introduction .introduction__text {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+}
+
+.introduction__text h6 {
+  font-family: "Gotham-rounded", sans-serif;
+  max-width: 240px;
+  margin: 2% auto;
 }
 
 .introduction__photo {
@@ -229,6 +267,12 @@ footer .mobile__logo--footer {
 @media (min-width: 767px) {
   .image__carousel-inner {
     margin: 0 auto 5% auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .image__carousel-inner {
+    margin: 0 auto 40% auto;
   }
 }
 
