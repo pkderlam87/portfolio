@@ -18,14 +18,13 @@
         color: getColour(secondary-color); 
     }
 }
-.buttons{
-    display: flex;
-    justify-content: space-around;
-}
 #linkToPage,
 #linkToGit{
     font-size: 2rem;
     padding: 2% 6%;
+    &:hover{
+        font-size: 2rem;
+    }
 }
 .about__buttons{
     display: flex;

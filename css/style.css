@@ -80,18 +80,15 @@
   color: #035757;
 }
 
-.buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 #linkToPage,
 #linkToGit {
   font-size: 2rem;
   padding: 2% 6%;
+}
+
+#linkToPage:hover,
+#linkToGit:hover {
+  font-size: 2rem;
 }
 
 .about__buttons {
@@ -213,25 +210,31 @@ footer .mobile__logo--footer {
 
 .image__carousel-inner {
   width: 70%;
-  margin: 0 auto 40% auto;
+  margin: 0 auto 45% auto;
 }
 
 @media (min-width: 400px) {
   .image__carousel-inner {
-    margin: 0 auto 20% auto;
+    margin: 0 auto 30% auto;
   }
 }
 
 @media (min-width: 500px) {
   .image__carousel-inner {
-    margin: 0 auto 15% auto;
+    margin: 0 auto 20% auto;
   }
 }
 
 @media (min-width: 767px) {
   .image__carousel-inner {
-    margin: 0 auto 3% auto;
+    margin: 0 auto 5% auto;
   }
+}
+
+.portfolio__cards {
+  border: 1px solid #2A2D2D;
+  border-radius: 15px;
+  margin-bottom: 2%;
 }
 
 .img__services {

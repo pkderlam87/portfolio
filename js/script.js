@@ -1,6 +1,5 @@
 import { introText } from "./components/introduction.js";
 import { newWindowLinkedin } from "./socialMedia.js";
-import { portfolioCardsShow } from "./components/portfolioCards.js";
 import { skillsShow } from "./components/skills.js";
 import { servicesShow } from "./components/services.js";
 import { aboutShow } from "./components/about.js";
@@ -25,8 +24,7 @@ function intro() {
     //Linkedin Button in the introduction
     const linkedin = document.querySelector(".linkedin");
     linkedin.addEventListener("click", newWindowLinkedin);
-    //call the portfolio cards show function
-    portfolioCardsShow();
+    //call the skills, services, about and contact functions
     skillsShow();
     servicesShow();
     aboutShow();

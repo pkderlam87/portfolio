@@ -1,41 +1,68 @@
 import { baseURL } from "../util/api.js";
-const categoriesURL = baseURL + "1&_embed";
 
-export async function portfolioCardsShow() {
+let categoriesURL = baseURL;
+let portfolioCards = document.querySelector(".portfolio__cards");
+let idCarouselItem = 1;
+
+(async function createPortfolioURL() {
+    try {
+        const response = await fetch(baseURL);
+        const dataBaseUrl = await response.json();
+        for (let i = 0; i < dataBaseUrl.length; i++) {
+            categoriesURL = "https://pkderlam.one/portfolio/wp-json/wp/v2/posts?categories=" + dataBaseUrl[i].id + "&_embed";
+            portfolioCardsShow(categoriesURL);
+        }
+    } catch (error) {
+        console.log("An error occurred.");
+    }
+})();
+
+async function portfolioCardsShow(categoriesURL) {
     try {
         const response = await fetch(categoriesURL);
         const data = await response.json();
-        console.log(data);
-        const portfolioCards = document.querySelector(".portfolio__cards");
-        portfolioCards.innerHTML = `<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        contentCarousel(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function contentCarousel(data) {
+    portfolioCards.innerHTML +=
+        `<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
+          </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active" data-bs-interval="10000" id=${idCarouselItem++}>
             </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="2000" id=${idCarouselItem++}>
             </div>
-          <div class="carousel-item">
+          <div class="carousel-item" id=${idCarouselItem++}>
             </div>
+            <div class="container buttons d-flex justify-content-around">
+          </div>
         </div>
       </div>
-      </div>
-      <div class="container buttons">
-      <a href = "https://amazing-hugle-aedc0f.netlify.app" class="btn" id="linkToPage"><i class="fa-solid fa-globe"></i></a>
-      <a href = "https://github.com/pkderlam87/Semester_Project_2" class="btn" id="linkToGit"><i class="fa-brands fa-github"></i></a>
       </div>`;
-        const carouselItem = document.querySelectorAll(".carousel-item");
-        console.log(carouselItem);
-        for (let i = 0; i < data.length; i++) {
-            carouselItem[i].innerHTML = `<img src="${data[i]._embedded['wp:featuredmedia'][0].source_url}" class="d-block image__carousel-inner" alt="${data[i]._embedded['wp:featuredmedia'][0].alt_text}">
+    const carouselItem = document.querySelectorAll(".carousel-item");
+    console.log(carouselItem);
+    const buttons = document.querySelector(".buttons");
+    let dataIndex = 0;
+    for (let i = 0; i < carouselItem.length; i++) {
+        if (carouselItem[i].id >= (idCarouselItem - 3)) {
+            console.log("i:" + i + "carouselItemId:" + carouselItem[i].id);
+
+            carouselItem[i].innerHTML = `<img src="${data[dataIndex]._embedded['wp:featuredmedia'][0].source_url}" class="d-block image__carousel-inner" alt="${data[dataIndex]._embedded['wp:featuredmedia'][0].alt_text}">
             <div class="carousel-caption d-xs-block">
-              ${data[i].excerpt.rendered}
+              ${data[dataIndex].content.rendered}
             </div>`;
+            buttons.innerHTML = `<a href = "${data[0].excerpt.rendered}" class="btn" id="linkToPage"><i class="fa-solid fa-globe"></i></a>
+            <a href = "${data[1].excerpt.rendered}" class="btn" id="linkToGit"><i class="fa-brands fa-github"></i></a>`
+            dataIndex++;
         }
-    } catch (error) {
-        console.log("An error occurred.");
+
     }
 }
