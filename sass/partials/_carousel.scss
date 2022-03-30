@@ -8,14 +8,17 @@
             margin: 0 auto 20% auto;
         }
         @media (min-width: 767px) {
-            margin: 0 auto 5% auto;
-        }
-        @media (min-width: 992px){
             margin: 0 auto 40% auto;
         }
+        /*@media (min-width: 992px){
+            margin: 0 auto 40% auto;
+        }*/
 }
 .wrap__carousel{
     border: 1px solid getColour(dark-gray);
     border-radius: 15px;
     margin-bottom:2%;
+}
+.portfolio__cards{
+    grid-template-columns: 1fr 1fr;
 }

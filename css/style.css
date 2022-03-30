@@ -120,16 +120,6 @@
   font-size: 2rem;
 }
 
-.about__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .about__buttons .about__resume__button a {
   text-decoration: none;
   color: black;
@@ -139,11 +129,6 @@
   color: #FFF;
 }
 
-/*.fa-solid{
-    &:hover{
-        font-size: 1.1rem;
-    }
-}*/
 .icons__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,27 +145,34 @@
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .skills__list i {
+    font-size: 1.3rem;
+  }
+}
+
 .title {
   margin: 10% auto 3% auto;
   font-family: 'Gotham-rounded';
   text-align: center;
 }
 
-.introduction {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 @media (min-width: 768px) {
+  .introduction {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
   .introduction .introduction__text {
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .introduction .introduction__photo {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
   }
 }
 
@@ -250,6 +242,9 @@ footer .mobile__logo--footer {
 .image__carousel-inner {
   width: 70%;
   margin: 0 auto 45% auto;
+  /*@media (min-width: 992px){
+            margin: 0 auto 40% auto;
+        }*/
 }
 
 @media (min-width: 400px) {
@@ -266,12 +261,6 @@ footer .mobile__logo--footer {
 
 @media (min-width: 767px) {
   .image__carousel-inner {
-    margin: 0 auto 5% auto;
-  }
-}
-
-@media (min-width: 992px) {
-  .image__carousel-inner {
     margin: 0 auto 40% auto;
   }
 }
@@ -280,6 +269,11 @@ footer .mobile__logo--footer {
   border: 1px solid #2A2D2D;
   border-radius: 15px;
   margin-bottom: 2%;
+}
+
+.portfolio__cards {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .img__services {
@@ -297,6 +291,13 @@ footer .mobile__logo--footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding: 1% 0;
+}
+
+@media (min-width: 768px) {
+  .services__subtitles h1 {
+    font-size: 1.4rem;
+  }
 }
 
 .service__card {

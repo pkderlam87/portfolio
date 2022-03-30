@@ -1,8 +1,3 @@
-/*.fa-solid{
-    &:hover{
-        font-size: 1.1rem;
-    }
-}*/
 .icons__footer{
     display: flex;
     justify-content: space-evenly;
@@ -12,4 +7,9 @@
 }
 .fa-brands{
     cursor: pointer;
+}
+.skills__list i{
+    @media (min-width: 768px) {
+        font-size: 1.3rem;
+    }
 }
