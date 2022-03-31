@@ -2,17 +2,20 @@ export function contactShow() {
     const contactMeShow = document.querySelector(".contact__show");
     contactMeShow.innerHTML = `
     <br>
-                <div class="d-flex justify-content-evenly">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h6>Trondheim/Norway</h6>
-                </div>
-                <br>
-                    <a href="mailto:pkderlam@hotmail.com" class="d-flex justify-content-evenly email__contact"><i class="fa-solid fa-envelope"></i>
-                        <h6>pkderlam@hotmail.com</h6>
-                    </a>
-                <br>
                 <div id="validation"></div>
-                <div class="errorRequest"></div>
+                <div class="errorRequest"></div>        
+        <div class="col-md-4">
+            <div class="d-flex justify-content-evenly">
+                <i class="fa-solid fa-location-dot"></i>
+                <h6>Trondheim/Norway</h6>
+            </div>
+            <br>
+            <a href="mailto:pkderlam@hotmail.com" class="d-flex justify-content-evenly email__contact"><i class="fa-solid fa-envelope"></i>
+                <h6>pkderlam@hotmail.com</h6>
+            </a>
+            <br>
+        </div>
+            <div class="col-md-8"> 
                 <form action="https://pkderlam.one/portfolio/wp-json/contact-form-7/v1/contact-forms/13/feedback"
                     method="post" class="contact__form">
                     <div class="mb-3">
@@ -20,6 +23,7 @@ export function contactShow() {
                         <input type="text" class="form-control" id="exampleInputName" name="exampleInputName" required>
                         <div class="form-error" id="nameError">Your name should have at least 2 characters</div>
                     </div>
+                    <div class="d-md-flex gap-md-2">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email*</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" required>
@@ -30,15 +34,17 @@ export function contactShow() {
                         <input type="text" class="form-control" id="exampleInputPhoneNumber" name="exampleInputPhoneNumber">
                         <div id="phoneHelp" class="form-text">+47 99999999</div>
                     </div>
+                    </div>
                     <div class="mb-3">
                         <label for="exampleInputMessage" class="form-label">Enter your message*</label>
                         <textarea type="text" class="form-control" id="exampleInputMessage" name="exampleInputMessage" required></textarea>
                         <div class="form-error" id="messageError">Your message should have at least 5 characters</div>
                     </div>
-                    <div class="d-flex flex-column">
-                    <button type="submit" class="btn">Submit</button>
+                    <div class="d-flex flex-column d-md-block button__submit--contact">
+                        <button type="submit" class="btn">Submit</button>
                     </div>
-                </form>`;
+                </form>
+            </div>`;
     const form = document.querySelector(".contact__form");
     const emailError = document.querySelector("#emailError");
     const inputEmail = document.querySelector("#exampleInputEmail1");
@@ -100,6 +106,7 @@ const formSubmission = (event, emailError, inputEmail, nameError, inputName, mes
         })
         .catch((error) => {
             console.log(error)
+            errorRequest.style.display = "block";
             errorRequest.innerHTML = `<h6>An error occurred during the request${error}. Please try again later.</h6>`
         });
 };

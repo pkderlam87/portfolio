@@ -109,6 +109,13 @@
   }
 }
 
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #035757;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
 #linkToPage,
 #linkToGit {
   font-size: 2rem;
@@ -129,6 +136,11 @@
   color: #FFF;
 }
 
+.button__submit--contact {
+  width: 100px;
+  margin: 2% auto;
+}
+
 .icons__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -139,6 +151,12 @@
   font-size: 2rem;
   color: #FFF;
   margin: 2% auto;
+}
+
+@media (min-width: 768px) {
+  .icons__footer {
+    margin: 2%;
+  }
 }
 
 .fa-brands {
@@ -185,6 +203,7 @@
 .introduction__photo {
   width: 60%;
   margin: 2% auto;
+  border-radius: 100%;
 }
 
 * {
@@ -237,6 +256,12 @@ footer p {
 footer .mobile__logo--footer {
   width: 40%;
   margin: 2% auto;
+}
+
+@media (min-width: 768px) {
+  footer .mobile__logo--footer {
+    margin: 2%;
+  }
 }
 
 .image__carousel-inner {
@@ -313,5 +338,34 @@ footer .mobile__logo--footer {
 
 .form-error {
   display: none;
+}
+
+.messages, .successMessage, .errorRequest {
+  font-family: "Gotham-rounded", sans-serif;
+  text-align: center;
+  padding: 1%;
+  margin: 2% auto;
+}
+
+.successMessage {
+  border: 2px solid #035757;
+  background-color: #BFFDE8;
+}
+
+.errorRequest {
+  display: none;
+  border: 2px solid red;
+  background-color: rgba(243, 167, 167, 0.808);
+}
+
+.loader {
+  width: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .skills__list h6 {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

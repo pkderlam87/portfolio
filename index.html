@@ -13,7 +13,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- Font awesome -->
-    <link rel="stylesheet" href="/fontawesome-free-6.1.0-web/fontawesome-free-6.1.0-web/css/all.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css">
     <!-- Adobe fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/ldw8gqq.css">
     <!-- Favicon -->
@@ -71,7 +71,9 @@
             </div>
             <section class="portfolio">
                 <h1 class="title" id="portfolio">Portfolio</h1>
-                <div class="portfolio__cards container d-md-grid gap-5"></div>
+                <div class="portfolio__cards container d-md-grid gap-5">
+                    <img src="/images/loader.gif" alt="Priscila's logo is running" class="loader">
+                </div>
             </section>
             <section class="skills">
                 <h1 class="title" id="skills">Skills</h1>
@@ -88,19 +90,21 @@
             </section>
             <section class="contact">
                 <h1 class="title" id="contact">Contact</h1>
-                <div class="contact__show container"></div>
+                <div class="contact__show container d-md-flex row align-items-center"></div>
             </section>
         </div>
     </main>
     <footer>
         <div class="container">
-            <a href="/index.html" class="flex"><img
-                    src="/images/Logos/Logo Pee - font white - whithout background - without name.png"
-                    alt="Priscila's Logo" class="mobile__logo--footer"></a>
-            <div class="icons__footer">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
+            <div class="wrap__info--footer d-md-flex justify-content-between">
+                <a href="/index.html" class="flex"><img
+                        src="/images/Logos/Logo Pee - font white - whithout background - without name.png"
+                        alt="Priscila's Logo" class="mobile__logo--footer"></a>
+                <div class="icons__footer gap-md-2 align-items-center">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
             </div>
             <p>Copyright &copy 2022, Priscila Kuhn Derlam</p>
         </div>

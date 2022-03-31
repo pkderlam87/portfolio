@@ -8,5 +8,8 @@ footer{
     .mobile__logo--footer{
         width: 40%;
         margin: 2% auto;
+        @media (min-width:768px) {
+            margin: 2%;
+        }
     }
 }

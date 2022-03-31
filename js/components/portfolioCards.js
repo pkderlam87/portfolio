@@ -8,6 +8,7 @@ let idCarouselItem = 1;
   try {
     const response = await fetch(baseURL);
     const dataBaseUrl = await response.json();
+    portfolioCards.innerHTML = "";
     for (let i = 0; i < dataBaseUrl.length; i++) {
       categoriesURL = "https://pkderlam.one/portfolio/wp-json/wp/v2/posts?categories=" + dataBaseUrl[i].id + "&_embed";
       portfolioCardsShow(categoriesURL, i);

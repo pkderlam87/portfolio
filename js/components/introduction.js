@@ -7,7 +7,7 @@ export function introductionShow() {
     <div class="introduction__text">
         <h6>Hi, I am Priscila Kuhn Derlam, Junior Front End Developer based in Trondheim, Norway</h6> 
     </div>
-    <img src="/images/My cartoon photo.jpeg" alt="Priscila's cartoon photo" class="introduction__photo">
+    <img src="/images/Linkedin-photo.png" alt="Priscila's photo" class="introduction__photo">
     <div class="buttons d-flex justify-content-evenly">
         <div>
             <a href="/Resume.pdf" download>
