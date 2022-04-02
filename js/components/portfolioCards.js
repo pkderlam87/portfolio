@@ -62,6 +62,6 @@ function contentCarousel(data, i) {
             </div>`;
       dataIndex++;
     }
-
+    console.log(carouselItem[i]);
   }
 }

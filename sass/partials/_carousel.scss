@@ -1,24 +1,26 @@
-.image__carousel-inner{
-        width: 70%;
-        margin: 0 auto 45% auto;
-        @media (min-width: 400px) {
-            margin: 0 auto 30% auto;
-        }
-        @media (min-width: 500px) {
-            margin: 0 auto 20% auto;
-        }
-        @media (min-width: 767px) {
-            margin: 0 auto 40% auto;
-        }
-        /*@media (min-width: 992px){
-            margin: 0 auto 40% auto;
-        }*/
+.image__carousel-inner {
+    width: 70%;
+    margin: 0 auto 45% auto;
+
+    @media (min-width: 400px) {
+        margin: 0 auto 25% auto;
+    }
+
+    @media (min-width: 500px) {
+        margin: 0 auto 10% auto;
+    }
+
+    @media (min-width: 768px) {
+        margin: 0 auto 30% auto;
+    }
 }
-.wrap__carousel{
+
+.wrap__carousel {
     border: 1px solid getColour(dark-gray);
     border-radius: 15px;
-    margin-bottom:2%;
+    margin-bottom: 2%;
 }
-.portfolio__cards{
+
+.portfolio__cards {
     grid-template-columns: 1fr 1fr;
 }
