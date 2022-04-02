@@ -1,0 +1,17 @@
+.messages{
+    font-family: $font-secondary;
+    text-align: center;
+    padding: 1%;
+    margin: 2% auto;
+}
+.successMessage{
+    @extend .messages;
+    border: 2px solid getColour(secondary-color);
+    background-color: #BFFDE8;
+}
+.errorRequest{
+    @extend .messages;
+    display: none;
+    border: 2px solid red;
+    background-color: rgba(243, 167, 167, 0.808);
+}

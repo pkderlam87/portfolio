@@ -1,0 +1,371 @@
+/* Colour variables*/
+/* Colour function*/
+/* Font variables*/
+@font-face {
+  font-family: 'Gotham-rounded';
+  src: url("/fonts/Gotham-Rounded-Font/Gotham Rounded Medium.otf") format("opentype");
+}
+
+.bg-light {
+  background-color: #035757 !important;
+}
+
+.container-fluid {
+  -ms-flex-wrap: initial !important;
+      flex-wrap: initial !important;
+  -ms-flex-negative: 100;
+      flex-shrink: 100;
+}
+
+.navbar-brand {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-align: end;
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    text-align: start;
+  }
+}
+
+.mobile__logo {
+  width: 50%;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #f2f2f2;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #FFF;
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  font-family: "Gotham-rounded", sans-serif;
+}
+
+.navbar-collapse {
+  margin: 0 3%;
+}
+
+@media (min-width: 992px) {
+  #searchForm {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  #searchForm .input__search {
+    height: 30px;
+  }
+}
+
+.btn, .btn__navbar {
+  border: 5px solid #035757;
+  color: black;
+  font-family: "Gotham-rounded", sans-serif;
+  border-radius: 11px;
+  margin-bottom: 2%;
+}
+
+.btn:hover, .btn__navbar:hover {
+  background-color: #035757;
+  color: #FFF;
+}
+
+.btn__navbar {
+  border: 3px solid #FFF;
+  color: #FFF;
+}
+
+.btn__navbar:hover {
+  background-color: #FFF;
+  color: #035757;
+}
+
+@media (min-width: 992px) {
+  .btn__navbar {
+    padding: 1% 2% !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #035757;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+#linkToPage,
+#linkToGit {
+  font-size: 2rem;
+  padding: 2% 6%;
+}
+
+#linkToPage:hover,
+#linkToGit:hover {
+  font-size: 2rem;
+}
+
+.about__buttons .about__resume__button a {
+  text-decoration: none;
+  color: black;
+}
+
+.about__buttons .about__resume__button:hover a {
+  color: #FFF;
+}
+
+.button__submit--contact {
+  width: 100px;
+  margin: 2% auto;
+}
+
+.icons__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2rem;
+  color: #FFF;
+  margin: 2% auto;
+}
+
+@media (min-width: 768px) {
+  .icons__footer {
+    margin: 2%;
+  }
+}
+
+.fa-brands {
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .skills__list i {
+    font-size: 1.3rem;
+  }
+}
+
+.title {
+  margin: 10% auto 3% auto;
+  font-family: 'Gotham-rounded';
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .introduction {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .introduction .introduction__text {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .introduction .introduction__photo {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+  }
+}
+
+.introduction__text h6 {
+  font-family: "Gotham-rounded", sans-serif;
+  max-width: 240px;
+  margin: 2% auto;
+}
+
+.introduction__photo {
+  width: 60%;
+  margin: 2% auto;
+  border-radius: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer {
+  background: #035757;
+  margin-top: 5%;
+}
+
+footer p {
+  color: #FFF;
+  text-align: center;
+}
+
+footer .mobile__logo--footer {
+  width: 40%;
+  margin: 2% auto;
+}
+
+@media (min-width: 768px) {
+  footer .mobile__logo--footer {
+    margin: 2%;
+  }
+}
+
+.image__carousel-inner {
+  width: 70%;
+  margin: 0 auto 45% auto;
+  /*@media (min-width: 992px){
+            margin: 0 auto 40% auto;
+        }*/
+}
+
+@media (min-width: 400px) {
+  .image__carousel-inner {
+    margin: 0 auto 30% auto;
+  }
+}
+
+@media (min-width: 500px) {
+  .image__carousel-inner {
+    margin: 0 auto 20% auto;
+  }
+}
+
+@media (min-width: 767px) {
+  .image__carousel-inner {
+    margin: 0 auto 40% auto;
+  }
+}
+
+.wrap__carousel {
+  border: 1px solid #2A2D2D;
+  border-radius: 15px;
+  margin-bottom: 2%;
+}
+
+.portfolio__cards {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.img__services {
+  max-width: 50%;
+  margin: 2% auto;
+}
+
+.services__subtitles {
+  background: #035757;
+  color: #FFF;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1% 0;
+}
+
+@media (min-width: 768px) {
+  .services__subtitles h1 {
+    font-size: 1.4rem;
+  }
+}
+
+.service__card {
+  border: 1px solid #2A2D2D;
+  border-radius: 15px;
+  margin-bottom: 2%;
+}
+
+.email__contact {
+  text-decoration: none;
+  color: black;
+}
+
+.form-error {
+  display: none;
+}
+
+.messages, .successMessage, .errorRequest {
+  font-family: "Gotham-rounded", sans-serif;
+  text-align: center;
+  padding: 1%;
+  margin: 2% auto;
+}
+
+.successMessage {
+  border: 2px solid #035757;
+  background-color: #BFFDE8;
+}
+
+.errorRequest {
+  display: none;
+  border: 2px solid red;
+  background-color: rgba(243, 167, 167, 0.808);
+}
+
+.loader {
+  width: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .skills__list h6 {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

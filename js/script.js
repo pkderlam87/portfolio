@@ -1,15 +1,15 @@
-const hamburgerMenu = document.querySelector(".fa-bars");
-const menu = document.querySelector("ul");
-let count = 0;
-function showMenu() {
-    menu.style.display = "block";
-    count++;
-    if ((count % 2) == 0) {
-        menu.style.display = "none";
-    }
+import { introductionShow } from "./components/introduction.js";
+import { skillsShow } from "./components/skills.js";
+import { servicesShow } from "./components/services.js";
+import { aboutShow } from "./components/about.js";
+import { contactShow } from "./components/contact.js";
+
+function showPortfolioPage() {
+    //call the introduction, skills, services, about and contact functions
+    introductionShow();
+    skillsShow();
+    servicesShow();
+    aboutShow();
+    contactShow();
 }
-hamburgerMenu.addEventListener("click", showMenu);
-console.log(screen.width);
-if (screen.width >= 769) {
-    hamburgerMenu.style.display = "none";
-}
+showPortfolioPage();

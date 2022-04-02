@@ -1,0 +1,26 @@
+.introduction{
+@media (min-width:768px) {
+        &{
+            grid-template-columns: 1fr 1fr;
+        }
+        .introduction__text{
+            grid-column: 1;
+        }
+        .introduction__photo{
+            grid-column: 2;
+            grid-row-start: 1;
+            grid-row-end: span 2;
+        }
+    }
+}
+.introduction__text h6{
+    font-family: $font-secondary;
+    max-width: 240px;
+    margin: 2% auto;
+}
+
+.introduction__photo{
+    width: 60%;
+    margin: 2% auto;
+    border-radius: 100%;
+}

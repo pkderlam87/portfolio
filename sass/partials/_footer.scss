@@ -1,0 +1,15 @@
+footer{
+    background: getColour(secondary-color);
+    margin-top: 5%;
+    p{
+        color: getColour(primary-color);
+        text-align: center;
+    }
+    .mobile__logo--footer{
+        width: 40%;
+        margin: 2% auto;
+        @media (min-width:768px) {
+            margin: 2%;
+        }
+    }
+}

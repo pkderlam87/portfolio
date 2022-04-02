@@ -1,0 +1,1 @@
+export const baseURL = "https://pkderlam.one/portfolio/wp-json/wp/v2/categories";

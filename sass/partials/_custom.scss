@@ -1,0 +1,14 @@
+/* Colour variables*/
+$colours: (
+    primary-color: #FFF,
+    secondary-color: #035757,
+    dark-gray: #2A2D2D,
+    light-gray: #707070
+);
+/* Colour function*/
+@function getColour($colour){
+    @return map-get($colours, $colour);
+}
+/* Font variables*/
+$font-primary: "Quasimoda", sans-serif;
+$font-secondary: "Gotham-rounded", sans-serif;
