@@ -1,5 +1,9 @@
-.skills__list h6{
-    @media (min-width:768px){
+.skills__list h6 {
+    @media (min-width:768px) {
+        font-size: 1.2rem;
+    }
+
+    @media (min-width:992px) {
         font-size: 1.5rem;
     }
 }

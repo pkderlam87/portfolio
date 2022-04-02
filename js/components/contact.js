@@ -5,12 +5,12 @@ export function contactShow() {
                 <div id="validation"></div>
                 <div class="errorRequest"></div>        
         <div class="col-md-4">
-            <div class="d-flex justify-content-evenly">
+            <div class="d-flex gap-2">
                 <i class="fa-solid fa-location-dot"></i>
                 <h6>Trondheim/Norway</h6>
             </div>
             <br>
-            <a href="mailto:pkderlam@hotmail.com" class="d-flex justify-content-evenly email__contact"><i class="fa-solid fa-envelope"></i>
+            <a href="mailto:pkderlam@hotmail.com" class="d-flex gap-2 email__contact"><i class="fa-solid fa-envelope"></i>
                 <h6>pkderlam@hotmail.com</h6>
             </a>
             <br>
@@ -23,13 +23,13 @@ export function contactShow() {
                         <input type="text" class="form-control" id="exampleInputName" name="exampleInputName" required>
                         <div class="form-error" id="nameError">Your name should have at least 2 characters</div>
                     </div>
-                    <div class="d-md-flex gap-md-2">
-                    <div class="mb-3">
+                    <div class="d-md-flex gap-md-1 col-md-12">
+                    <div class="mb-3 col-md-6">
                         <label for="exampleInputEmail1" class="form-label">Email*</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" name="exampleInputEmail1" required>
                         <div class="form-error" id="emailError">Your email must be a valid email address</div>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-md-6">
                         <label for="exampleInputPhoneNumber" class="form-label">Phone Number (optional)</label>
                         <input type="text" class="form-control" id="exampleInputPhoneNumber" name="exampleInputPhoneNumber">
                         <div id="phoneHelp" class="form-text">+47 99999999</div>

@@ -1,7 +1,13 @@
-.email__contact{
+.email__contact {
     text-decoration: none;
     color: black;
+
+    &:hover {
+        color: black;
+        text-decoration: underline;
+    }
 }
-.form-error{
+
+.form-error {
     display: none;
 }

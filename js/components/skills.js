@@ -2,7 +2,7 @@ export function skillsShow() {
     const skillsList = document.querySelector(".skills__list");
     skillsList.innerHTML = `
     <div class="row ">
-    <div class="col d-md-flex flex-md-row gap-md-4 justify-content-center">
+    <div class="col d-md-flex flex-md-row gap-md-2 gap-lg-3 justify-content-center">
         <div class="d-flex align-items-center">
             <i class="fa-brands fa-html5 me-2"></i> 
             <h6>HTML</h6>
@@ -33,7 +33,7 @@ export function skillsShow() {
             <h6>Trello</h6>
         </div>
     </div>
-    <div class="col d-md-flex flex-md-row gap-md-4 justify-content-center">
+    <div class="col d-md-flex flex-md-row gap-md-2 gap-lg-3 justify-content-center">
         <div class="d-flex align-items-center">
             <i class="fa-brands fa-css3-alt me-2"></i>
             <h6>CSS</h6>

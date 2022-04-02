@@ -29,6 +29,8 @@ async function portfolioCardsShow(categoriesURL, i) {
 }
 
 function contentCarousel(data, i) {
+  let sizeLinkToPage = data[0].excerpt.rendered.length;
+  let sizeLinkToGit = data[1].excerpt.rendered.length
   portfolioCards.innerHTML +=
     `<div class="wrap__carousel row">
         <div id="carouselExampleDark${i}" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -47,8 +49,8 @@ function contentCarousel(data, i) {
         </div>
       </div>
       <div class="container buttons d-flex justify-content-around">
-            <a href = "${data[0].excerpt.rendered}" class="btn" id="linkToPage"><i class="fa-solid fa-globe"></i></a>
-            <a href = "${data[1].excerpt.rendered}" class="btn" id="linkToGit"><i class="fa-brands fa-github"></i></a>
+            <a href = "${data[0].excerpt.rendered.slice(3, (sizeLinkToPage - 5))}" class="btn" id="linkToPage"><i class="fa-solid fa-globe"></i></a>
+            <a href = "${data[1].excerpt.rendered.slice(3, (sizeLinkToGit - 5))}" class="btn" id="linkToGit"><i class="fa-brands fa-github"></i></a>
           </div>
       </div>
       </div>`;
@@ -62,6 +64,5 @@ function contentCarousel(data, i) {
             </div>`;
       dataIndex++;
     }
-    console.log(carouselItem[i]);
   }
 }
