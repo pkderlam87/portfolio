@@ -201,9 +201,9 @@
 }
 
 .introduction__photo {
-  width: 60%;
+  width: 40%;
   margin: 2% auto;
-  border-radius: 100%;
+  border-radius: 5px;
 }
 
 * {

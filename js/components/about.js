@@ -9,7 +9,7 @@ export function aboutShow() {
     </div>
     <div class="wrap__about--info col-md-7">
     <div>
-    <p>My nickname is "Pee" (π) since I was a child, just like the name of the letter Pi when pronounced
+    <p>My nickname is "P" (π) since I was a child, just like the name of the letter Pi when pronounced
         in Portuguese my mother language.</p>
     <p>I took a Front-end Developer higher professional degree in Norway, and I'm putting my focus on
         website development.</p>
