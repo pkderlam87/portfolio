@@ -18,8 +18,8 @@ export function aboutShow() {
 </div>
 <div class="about__buttons d-flex flex-column flex-md-row gap-md-3 justify-content-center">
         <button class="btn p-sm-2 px-md-2 py-md-1 about__resume__button"><a href="/Resume.pdf" download><h5><i class="fa-solid fa-download"></i> Resume</h5></a></button>
-        <a href="https://www.linkedin.com/in/priscila-kuhn-derlam/"><button class="btn linkedin p-sm-2 px-md-2 py-md-1"><h5><i class="fa-brands fa-linkedin"></i> LinkedIn</h5></button></a>
-        <a href="https://github.com/pkderlam87/"><button class="btn github p-sm-2 px-md-2 py-md-1"><h5><i class="fa-brands fa-github"></i> Github</h5></button></a>
+        <a href="https://www.linkedin.com/in/priscila-kuhn-derlam/" class="btn linkedin p-sm-2 px-md-2 py-md-1"><h5><i class="fa-brands fa-linkedin"></i> LinkedIn</h5></a>
+        <a href="https://github.com/pkderlam87/" class="btn github p-sm-2 px-md-2 py-md-1"><h5><i class="fa-brands fa-github"></i> Github</h5></a>
 </div>
 </div>`;
 }
