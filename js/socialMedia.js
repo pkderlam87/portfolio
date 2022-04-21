@@ -1,6 +1,6 @@
 const instagram = document.querySelector(".fa-instagram");
 const github = document.querySelector(".fa-github");
-const footerLinkedin = document.querySelector(".fa-linkedin");
+const linkedin = document.querySelector(".fa-linkedin");
 
 export function newWindowInsta() {
     window.open("https://www.instagram.com/prikuhnderlam/", "width=400,height=400");
@@ -13,4 +13,4 @@ github.addEventListener("click", newWindowGithub);
 export function newWindowLinkedin() {
     window.open("https://www.linkedin.com/in/priscila-kuhn-derlam/", "width=400,height=400");
 }
-footerLinkedin.addEventListener("click", newWindowLinkedin);
+linkedin.addEventListener("click", newWindowLinkedin);
