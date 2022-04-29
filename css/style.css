@@ -149,8 +149,11 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   font-size: 2rem;
-  color: #FFF;
   margin: 2% auto;
+}
+
+.icons__footer a {
+  color: #FFF;
 }
 
 @media (min-width: 768px) {

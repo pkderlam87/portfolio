@@ -1,17 +1,23 @@
-.icons__footer{
+.icons__footer {
     display: flex;
     justify-content: space-evenly;
     font-size: 2rem;
-    color: getColour(primary-color);
     margin: 2% auto;
+
+    a {
+        color: getColour(primary-color);
+    }
+
     @media (min-width:768px) {
         margin: 2%;
     }
 }
-.fa-brands{
+
+.fa-brands {
     cursor: pointer;
 }
-.skills__list i{
+
+.skills__list i {
     @media (min-width: 768px) {
         font-size: 1.3rem;
     }
