@@ -5,7 +5,7 @@ const introduction = document.querySelector(".introduction");
 export function introductionShow() {
     introduction.innerHTML = `
     <div class="introduction__text">
-        <h6>Hi, I am Priscila Kuhn Derlam, Junior Front End Developer based in Trondheim, Norway</h6> 
+        <h6>Hi, I am Priscila Kuhn Derlam, Front End Developer</h6> 
     </div>
     <img src="/images/Linkedin-photo.jpg" alt="Priscila's photo" class="introduction__photo">
     <div class="buttons d-flex justify-content-evenly">
