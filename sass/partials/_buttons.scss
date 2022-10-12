@@ -1,56 +1,81 @@
-.btn{
+.btn {
     border: 5px solid getColour(secondary-color);
     color: black;
     font-family: $font-secondary;
     border-radius: 11px;
-    &:hover{
-       background-color: getColour(secondary-color);
-       color: getColour(primary-color); 
+
+    &:hover {
+        background-color: getColour(secondary-color);
+        color: getColour(primary-color);
     }
+
     margin-bottom: 2%;
 }
-.btn__navbar{
+
+.btn__navbar {
     @extend .btn;
     border: 3px solid getColour(primary-color);
     color: getColour(primary-color);
-    &:hover{
+
+    &:hover {
         background-color: getColour(primary-color);
-        color: getColour(secondary-color); 
+        color: getColour(secondary-color);
     }
+
     @media (min-width:992px) {
-        padding:1% 2% !important;
+        padding: 1% 2% !important;
         margin-bottom: 0 !important;
     }
 }
-.carousel-dark{
-    .carousel-indicators [data-bs-target]{
+
+.carousel-dark {
+    .carousel-indicators [data-bs-target] {
         background-color: getColour(secondary-color);
         width: 20px;
         height: 20px;
         border-radius: 100%;
     }
 }
+
 #linkToPage,
-#linkToGit{
+#linkToGit {
     font-size: 2rem;
     padding: 2% 6%;
-    &:hover{
+
+    &:hover {
         font-size: 2rem;
     }
 }
-.about__buttons{
-    .about__resume__button{
-        a{text-decoration: none;
+
+.about__buttons {
+    .about__resume__button {
+        a {
+            text-decoration: none;
             color: black;
         }
-        &:hover{
-            a{
+
+        &:hover {
+            a {
                 color: getColour(primary-color);
             }
         }
     }
 }
-.button__submit--contact{
-    width:100px;
+
+.button__submit--contact {
+    width: 100px;
     margin: 2% auto;
+}
+
+.resume,
+.linkedin {
+    color: getColour(primary-color);
+    border-color: #7ac298;
+
+    &:hover {
+        border-color: #fff;
+        background-color: #fff;
+        color: getColour(secondary-color);
+        text-decoration: underline;
+    }
 }

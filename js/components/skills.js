@@ -8,6 +8,10 @@ export function skillsShow() {
             <h6>HTML</h6>
         </div>
         <div class="d-flex align-items-center">
+        <i class="fa-brands fa-figma"></i>
+        <h6>Figma</h6>
+        </div>
+        <div class="d-flex align-items-center">
             <i class="fa-brands fa-bootstrap me-2"></i>
             <h6>Bootstrap</h6>
         </div>
@@ -51,7 +55,7 @@ export function skillsShow() {
             <h6>Github</h6>
         </div>
         <div class="d-flex align-items-center">
-            <i class="fa-brands fa-github me-2"></i>
+            <img src="../../images/skills/strapi.svg" alt="Strapi's logo" class="strapi__icon me-2">
             <h6>Strapi</h6>
         </div>
         <div class="d-flex align-items-center">

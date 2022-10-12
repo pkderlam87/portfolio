@@ -58,7 +58,7 @@ function contentCarousel(data, i) {
   let dataIndex = 0;
   for (let i = 0; i < carouselItem.length; i++) {
     if (carouselItem[i].id >= (idCarouselItem - 3)) {
-      carouselItem[i].innerHTML = `<img src="${data[dataIndex]._embedded['wp:featuredmedia'][0].source_url}" class="d-block image__carousel-inner" alt="${data[dataIndex]._embedded['wp:featuredmedia'][0].alt_text}">
+      carouselItem[i].innerHTML = `<h3 class="card__title">${data[dataIndex].title.rendered}</h3><img src="${data[dataIndex]._embedded['wp:featuredmedia'][0].source_url}" class="d-block image__carousel-inner" alt="${data[dataIndex]._embedded['wp:featuredmedia'][0].alt_text}">
             <div class="carousel-caption d-xs-block">
               ${data[dataIndex].content.rendered}
             </div>`;
