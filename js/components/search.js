@@ -1,5 +1,4 @@
 const searchForm = document.querySelector("#searchForm");
-const noResults = document.querySelector(".searchbar__results");
 searchForm.addEventListener("submit", searchResult);
 
 export function searchResult(event) {
@@ -9,6 +8,10 @@ export function searchResult(event) {
     let strFound;
     if (window.find) {
         strFound = self.find(str);
+        if (navigator.appName == "Opera") {
+            alert("Opera browsers not supported, sorry...")
+            return;
+        }
         if (!strFound) {
             strFound = self.find(str, 0, 1);
             if (!strFound) { alert("Text " + str + " not found!") }

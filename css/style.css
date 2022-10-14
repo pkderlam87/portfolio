@@ -223,6 +223,12 @@
   }
 }
 
+@media screen and (max-height: 768px) {
+  .introduction {
+    height: 130vh;
+  }
+}
+
 .introduction::before {
   content: " ";
   position: absolute;

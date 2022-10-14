@@ -18,6 +18,10 @@
         height: 70vh;
     }
 
+    @media screen and (max-height: 768px) {
+        height: 130vh;
+    }
+
     &::before {
         content: " ";
         position: absolute;
