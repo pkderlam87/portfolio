@@ -207,7 +207,7 @@
 
 @media all and (max-width: 768px) and (orientation: portrait) {
   .introduction {
-    height: 60vh;
+    height: 70vh;
   }
 }
 
@@ -254,6 +254,12 @@
   .introduction::before {
     height: 90vh;
     width: 180vh;
+  }
+}
+
+@media all and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: landscape) {
+  .introduction::before {
+    width: 90vh;
   }
 }
 
