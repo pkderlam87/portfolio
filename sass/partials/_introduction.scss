@@ -6,9 +6,12 @@
     padding: 60px;
     color: getColour(primary-color);
 
-    @media (max-width:768px),
-    (orientation: portrait) {
+    @media all and (max-width:768px) and (orientation: portrait) {
         height: 60vh;
+    }
+
+    @media all and (min-device-width:320px) and (max-device-width:768px) and (orientation: landscape) {
+        height: 180vh;
     }
 
     @media (min-width:768px) {
@@ -21,13 +24,6 @@
 
     @media (min-width:1200px) {
         height: 70vh;
-    }
-
-    @media (min-device-width:320px),
-    (max-device-width:768px),
-    (-webkit-min-device-pixel-ratio: 2),
-    (orientation: landscape) {
-        height: 180vh;
     }
 
     &::before {

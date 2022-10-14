@@ -205,9 +205,15 @@
   color: #FFF;
 }
 
-@media (max-width: 768px), (orientation: portrait) {
+@media all and (max-width: 768px) and (orientation: portrait) {
   .introduction {
     height: 60vh;
+  }
+}
+
+@media all and (min-device-width: 320px) and (max-device-width: 768px) and (orientation: landscape) {
+  .introduction {
+    height: 180vh;
   }
 }
 
@@ -226,12 +232,6 @@
 @media (min-width: 1200px) {
   .introduction {
     height: 70vh;
-  }
-}
-
-@media (min-device-width: 320px), (max-device-width: 768px), (-webkit-min-device-pixel-ratio: 2), (orientation: landscape) {
-  .introduction {
-    height: 180vh;
   }
 }
 
