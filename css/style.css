@@ -205,9 +205,15 @@
   color: #FFF;
 }
 
+@media (max-width: 768px), (orientation: portrait) {
+  .introduction {
+    height: 60vh;
+  }
+}
+
 @media (min-width: 768px) {
   .introduction {
-    height: 30vh;
+    height: 40vh;
   }
 }
 
@@ -223,9 +229,9 @@
   }
 }
 
-@media (max-width: 768px) and (max-height: 768px) {
+@media (min-device-width: 320px), (max-device-width: 768px), (-webkit-min-device-pixel-ratio: 2), (orientation: landscape) {
   .introduction {
-    height: 130vh;
+    height: 180vh;
   }
 }
 
@@ -234,7 +240,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 50vh;
+  width: 70vh;
   height: 60vh;
   background-color: #161616;
   border-radius: 50%;
