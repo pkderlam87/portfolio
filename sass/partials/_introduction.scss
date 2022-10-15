@@ -18,8 +18,16 @@
         height: 40vh;
     }
 
+    @media all and (min-device-width:768px) and (max-device-width:991px) and (orientation: landscape) {
+        height: 70vh;
+    }
+
     @media (min-width:992px) {
         height: 30vh;
+    }
+
+    @media all and (min-device-width:992px) and (max-device-width:1200px) and (orientation: landscape) {
+        height: 70vh;
     }
 
     @media (min-width:1200px) {
