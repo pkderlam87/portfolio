@@ -30,9 +30,12 @@ async function portfolioCardsShow(categoriesURL, i) {
 
 function contentCarousel(data, i) {
   let sizeLinkToPage = data[0].excerpt.rendered.length;
-  let sizeLinkToGit = data[1].excerpt.rendered.length
-  portfolioCards.innerHTML +=
-    `<div class="wrap__carousel row">
+  let linkToPageOnCards = data[0].excerpt.rendered;
+  const plainTextLink = linkToPageOnCards.replace(/<[^>]*>/g, '').trim();
+  let sizeLinkToGit = data[1].excerpt.rendered.length;
+  if (plainTextLink === "https://javascriptframeworks.netlify.app") {
+    portfolioCards.innerHTML +=
+      `<div class="wrap__carousel row">
         <div id="carouselExampleDark${i}" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark${i}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -54,6 +57,31 @@ function contentCarousel(data, i) {
           </div>
       </div>
       </div>`;
+  } else {
+    portfolioCards.innerHTML +=
+      `<div class="wrap__carousel row">
+        <div id="carouselExampleDark${i}" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark${i}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark${i}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark${i}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000" id=${idCarouselItem++}>
+            </div>
+          <div class="carousel-item" data-bs-interval="2000" id=${idCarouselItem++}>
+            </div>
+          <div class="carousel-item" id=${idCarouselItem++}>
+            </div>
+        </div>
+      </div>
+      <div class="container buttons d-flex justify-content-around">
+            <a href = "${data[1].excerpt.rendered.slice(3, (sizeLinkToGit - 5))}" class="btn" id="linkToGit"><i class="fa-brands fa-github"></i></a>
+          </div>
+      </div>
+      </div>`;
+  }
+
   const carouselItem = document.querySelectorAll(".carousel-item");
   let dataIndex = 0;
   for (let i = 0; i < carouselItem.length; i++) {
